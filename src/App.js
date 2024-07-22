@@ -1,12 +1,23 @@
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './screens/LandingPage';
+import ApplicationRoutes from './routes/ApplicationRoutes';
 import Sidebar from './components/sidebar/Sidebar';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Sidebar />
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage/>} />
+
+        {/* if the route is anyother than the landing:
+        Forwarding it to the Routes Component which consists of
+        all page routes with a switch */}
+        <Route path='*' element={<ApplicationRoutes/>} />
+      </Routes>
+    </Router>
+  )
 }
 
 export default App;
