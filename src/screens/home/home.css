@@ -1,0 +1,9 @@
+.widgets-wrapper {
+    width: 80vw;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;  
+    gap: 50px 20px;
+}

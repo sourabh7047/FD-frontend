@@ -1,0 +1,14 @@
+.card_wrapper {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    gap: 100px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_wrapper > div {
+    height: 100px;
+    flex :5;
+}
